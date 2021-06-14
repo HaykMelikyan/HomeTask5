@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator Operations Tests">
+    <test name="All Tests" parallel="classes">
+        <groups>
+            <run>
+                <include name="arithmetictests"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="testngtests.LongSumTest"/>
+            <class name="testngtests.DoubleSumTest"/>
+            <class name="testngtests.LongSubTest"/>
+            <class name="testngtests.DoubleSubTest"/>
+            <class name="testngtests.LongMultTest"/>
+            <class name="testngtests.DoubleMultTest"/>
+            <class name="testngtests.LongDivTest"/>
+            <class name="testngtests.DoubleDivTest"/>
+        </classes>
+    </test>
+</suite>
